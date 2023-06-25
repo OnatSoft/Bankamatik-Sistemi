@@ -47,8 +47,8 @@ namespace Bankamatik_Simulasyon14
             this.LnkGiris = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtBakiye = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -92,7 +92,7 @@ namespace Bankamatik_Simulasyon14
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(117, 179);
+            this.label5.Location = new System.Drawing.Point(117, 178);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 20);
             this.label5.TabIndex = 7;
@@ -112,14 +112,14 @@ namespace Bankamatik_Simulasyon14
             // 
             // txtAdSoyad
             // 
-            this.txtAdSoyad.Location = new System.Drawing.Point(184, 111);
+            this.txtAdSoyad.Location = new System.Drawing.Point(181, 115);
             this.txtAdSoyad.Name = "txtAdSoyad";
             this.txtAdSoyad.Size = new System.Drawing.Size(179, 25);
             this.txtAdSoyad.TabIndex = 4;
             // 
             // msktxtTCKimlik
             // 
-            this.msktxtTCKimlik.Location = new System.Drawing.Point(184, 80);
+            this.msktxtTCKimlik.Location = new System.Drawing.Point(181, 84);
             this.msktxtTCKimlik.Mask = "00000000000";
             this.msktxtTCKimlik.Name = "msktxtTCKimlik";
             this.msktxtTCKimlik.Size = new System.Drawing.Size(179, 25);
@@ -128,14 +128,14 @@ namespace Bankamatik_Simulasyon14
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(184, 142);
+            this.txtEmail.Location = new System.Drawing.Point(181, 146);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(179, 25);
             this.txtEmail.TabIndex = 6;
             // 
             // txtSifre
             // 
-            this.txtSifre.Location = new System.Drawing.Point(184, 224);
+            this.txtSifre.Location = new System.Drawing.Point(181, 224);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(179, 25);
             this.txtSifre.TabIndex = 10;
@@ -143,7 +143,7 @@ namespace Bankamatik_Simulasyon14
             // 
             // msktxtTelefon
             // 
-            this.msktxtTelefon.Location = new System.Drawing.Point(184, 174);
+            this.msktxtTelefon.Location = new System.Drawing.Point(181, 177);
             this.msktxtTelefon.Mask = "(999) 000-0000";
             this.msktxtTelefon.Name = "msktxtTelefon";
             this.msktxtTelefon.Size = new System.Drawing.Size(179, 25);
@@ -155,17 +155,17 @@ namespace Bankamatik_Simulasyon14
             this.btnKaydol.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKaydol.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnKaydol.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaydol.Location = new System.Drawing.Point(184, 366);
+            this.btnKaydol.Location = new System.Drawing.Point(181, 366);
             this.btnKaydol.Name = "btnKaydol";
-            this.btnKaydol.Size = new System.Drawing.Size(179, 52);
+            this.btnKaydol.Size = new System.Drawing.Size(179, 50);
             this.btnKaydol.TabIndex = 17;
-            this.btnKaydol.Text = "Kaydol";
+            this.btnKaydol.Text = "Kayıt Ol";
             this.btnKaydol.UseVisualStyleBackColor = false;
             this.btnKaydol.Click += new System.EventHandler(this.btnKaydol_Click);
             // 
             // txtSifreTekrar
             // 
-            this.txtSifreTekrar.Location = new System.Drawing.Point(184, 255);
+            this.txtSifreTekrar.Location = new System.Drawing.Point(181, 257);
             this.txtSifreTekrar.Name = "txtSifreTekrar";
             this.txtSifreTekrar.Size = new System.Drawing.Size(179, 25);
             this.txtSifreTekrar.TabIndex = 12;
@@ -176,16 +176,16 @@ namespace Bankamatik_Simulasyon14
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(81, 260);
+            this.label8.Location = new System.Drawing.Point(81, 258);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(97, 20);
             this.label8.TabIndex = 11;
-            this.label8.Text = "Şifreyi Yinele:";
+            this.label8.Text = "Şifreyi Tekrar:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // txtHesapno
             // 
-            this.txtHesapno.Location = new System.Drawing.Point(184, 286);
+            this.txtHesapno.Location = new System.Drawing.Point(181, 290);
             this.txtHesapno.Name = "txtHesapno";
             this.txtHesapno.ReadOnly = true;
             this.txtHesapno.Size = new System.Drawing.Size(179, 25);
@@ -212,7 +212,7 @@ namespace Bankamatik_Simulasyon14
             this.LnkGiris.ForeColor = System.Drawing.Color.White;
             this.LnkGiris.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.LnkGiris.LinkColor = System.Drawing.Color.White;
-            this.LnkGiris.Location = new System.Drawing.Point(367, 398);
+            this.LnkGiris.Location = new System.Drawing.Point(366, 396);
             this.LnkGiris.Name = "LnkGiris";
             this.LnkGiris.Size = new System.Drawing.Size(66, 20);
             this.LnkGiris.TabIndex = 18;
@@ -230,7 +230,7 @@ namespace Bankamatik_Simulasyon14
             this.linkLabel1.ForeColor = System.Drawing.Color.White;
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(367, 291);
+            this.linkLabel1.Location = new System.Drawing.Point(366, 295);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(48, 20);
             this.linkLabel1.TabIndex = 18;
@@ -249,29 +249,29 @@ namespace Bankamatik_Simulasyon14
             this.panel1.Size = new System.Drawing.Size(485, 60);
             this.panel1.TabIndex = 21;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(30, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 32);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "MİLLETBANK";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Italic);
             this.label7.Location = new System.Drawing.Point(279, 20);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(180, 25);
             this.label7.TabIndex = 1;
             this.label7.Text = "Müşteri Online Kayıt";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 20F);
+            this.label2.Location = new System.Drawing.Point(30, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(183, 32);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "MİLLETBANK";
+            // 
             // txtBakiye
             // 
-            this.txtBakiye.Location = new System.Drawing.Point(184, 317);
+            this.txtBakiye.Location = new System.Drawing.Point(181, 323);
             this.txtBakiye.Name = "txtBakiye";
             this.txtBakiye.Size = new System.Drawing.Size(179, 25);
             this.txtBakiye.TabIndex = 16;
@@ -281,7 +281,7 @@ namespace Bankamatik_Simulasyon14
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(123, 322);
+            this.label10.Location = new System.Drawing.Point(123, 324);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(55, 20);
             this.label10.TabIndex = 15;
@@ -292,7 +292,7 @@ namespace Bankamatik_Simulasyon14
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(485, 439);
+            this.ClientSize = new System.Drawing.Size(485, 433);
             this.Controls.Add(this.txtBakiye);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);

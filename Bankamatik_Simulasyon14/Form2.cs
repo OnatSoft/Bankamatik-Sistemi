@@ -165,8 +165,12 @@ namespace Bankamatik_Simulasyon14
                 lblHesapNo1.Text = dr[5].ToString();
             }
             baglanti.Close();
+        }
 
-            
+        private void btnPassDegistir_Click(object sender, EventArgs e)
+        {
+            Form4 frm4 = new Form4();
+            frm4.Show();
         }
     }
 }

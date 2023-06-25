@@ -22,7 +22,6 @@ namespace Bankamatik_Simulasyon14
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form2 frm2 = new Form2();
             this.Close();
         }
 

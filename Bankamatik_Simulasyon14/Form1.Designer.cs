@@ -44,7 +44,7 @@ namespace Bankamatik_Simulasyon14
             // 
             // txtSifre
             // 
-            this.txtSifre.Location = new System.Drawing.Point(145, 131);
+            this.txtSifre.Location = new System.Drawing.Point(145, 135);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(154, 27);
             this.txtSifre.TabIndex = 2;
@@ -102,7 +102,7 @@ namespace Bankamatik_Simulasyon14
             // 
             // msktxtTCKimlik
             // 
-            this.msktxtTCKimlik.Location = new System.Drawing.Point(145, 98);
+            this.msktxtTCKimlik.Location = new System.Drawing.Point(145, 102);
             this.msktxtTCKimlik.Mask = "00000000000";
             this.msktxtTCKimlik.Name = "msktxtTCKimlik";
             this.msktxtTCKimlik.Size = new System.Drawing.Size(154, 27);
@@ -139,7 +139,7 @@ namespace Bankamatik_Simulasyon14
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Italic);
             this.label7.Location = new System.Drawing.Point(294, 20);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(122, 25);
@@ -149,7 +149,7 @@ namespace Bankamatik_Simulasyon14
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Font = new System.Drawing.Font("Arial", 20F);
             this.label6.Location = new System.Drawing.Point(23, 14);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(183, 32);

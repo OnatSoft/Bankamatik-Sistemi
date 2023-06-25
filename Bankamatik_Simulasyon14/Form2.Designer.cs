@@ -257,12 +257,12 @@ namespace Bankamatik_Simulasyon14
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Red;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(818, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(817, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
@@ -282,18 +282,18 @@ namespace Bankamatik_Simulasyon14
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(462, 29);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Italic);
+            this.label7.Location = new System.Drawing.Point(536, 29);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(138, 25);
+            this.label7.Size = new System.Drawing.Size(94, 25);
             this.label7.TabIndex = 31;
-            this.label7.Text = "İşlemler Sayfası";
+            this.label7.Text = "Ana Sayfa";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(26, 23);
+            this.label6.Font = new System.Drawing.Font("Arial", 20F);
+            this.label6.Location = new System.Drawing.Point(29, 23);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(183, 32);
             this.label6.TabIndex = 30;
@@ -523,6 +523,7 @@ namespace Bankamatik_Simulasyon14
             this.btnPassDegistir.TabIndex = 34;
             this.btnPassDegistir.Text = "Şifre Değiştirme";
             this.btnPassDegistir.UseVisualStyleBackColor = false;
+            this.btnPassDegistir.Click += new System.EventHandler(this.btnPassDegistir_Click);
             // 
             // btnParaCekme
             // 
