@@ -39,12 +39,15 @@ namespace Bankamatik_Simulasyon14
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.lblSayiToplami = new System.Windows.Forms.Label();
+            this.txtCaptcha = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtSifre
             // 
-            this.txtSifre.Location = new System.Drawing.Point(145, 135);
+            this.txtSifre.Location = new System.Drawing.Point(145, 113);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(154, 27);
             this.txtSifre.TabIndex = 2;
@@ -54,7 +57,7 @@ namespace Bankamatik_Simulasyon14
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(35, 105);
+            this.label1.Location = new System.Drawing.Point(35, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 20);
             this.label1.TabIndex = 0;
@@ -64,7 +67,7 @@ namespace Bankamatik_Simulasyon14
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(97, 138);
+            this.label2.Location = new System.Drawing.Point(97, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 20);
             this.label2.TabIndex = 6;
@@ -78,7 +81,7 @@ namespace Bankamatik_Simulasyon14
             this.btnGiris.Location = new System.Drawing.Point(145, 188);
             this.btnGiris.Name = "btnGiris";
             this.btnGiris.Size = new System.Drawing.Size(154, 47);
-            this.btnGiris.TabIndex = 3;
+            this.btnGiris.TabIndex = 4;
             this.btnGiris.Text = "Giriş Yap";
             this.btnGiris.UseVisualStyleBackColor = false;
             this.btnGiris.Click += new System.EventHandler(this.button1_Click);
@@ -91,10 +94,10 @@ namespace Bankamatik_Simulasyon14
             this.linkGosterGizle.ForeColor = System.Drawing.Color.White;
             this.linkGosterGizle.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkGosterGizle.LinkColor = System.Drawing.Color.White;
-            this.linkGosterGizle.Location = new System.Drawing.Point(305, 138);
+            this.linkGosterGizle.Location = new System.Drawing.Point(305, 120);
             this.linkGosterGizle.Name = "linkGosterGizle";
             this.linkGosterGizle.Size = new System.Drawing.Size(52, 20);
-            this.linkGosterGizle.TabIndex = 5;
+            this.linkGosterGizle.TabIndex = 6;
             this.linkGosterGizle.TabStop = true;
             this.linkGosterGizle.Text = "Göster";
             this.linkGosterGizle.VisitedLinkColor = System.Drawing.Color.DarkGray;
@@ -102,7 +105,7 @@ namespace Bankamatik_Simulasyon14
             // 
             // msktxtTCKimlik
             // 
-            this.msktxtTCKimlik.Location = new System.Drawing.Point(145, 102);
+            this.msktxtTCKimlik.Location = new System.Drawing.Point(145, 80);
             this.msktxtTCKimlik.Mask = "00000000000";
             this.msktxtTCKimlik.Name = "msktxtTCKimlik";
             this.msktxtTCKimlik.Size = new System.Drawing.Size(154, 27);
@@ -120,7 +123,7 @@ namespace Bankamatik_Simulasyon14
             this.linkLabel1.Location = new System.Drawing.Point(305, 215);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(61, 20);
-            this.linkLabel1.TabIndex = 4;
+            this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Kayıt Ol";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.DarkGray;
@@ -131,6 +134,7 @@ namespace Bankamatik_Simulasyon14
             this.panel1.BackColor = System.Drawing.Color.PaleGreen;
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(459, 60);
@@ -140,7 +144,7 @@ namespace Bankamatik_Simulasyon14
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Italic);
-            this.label7.Location = new System.Drawing.Point(294, 20);
+            this.label7.Location = new System.Drawing.Point(291, 20);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(122, 25);
             this.label7.TabIndex = 2;
@@ -156,13 +160,44 @@ namespace Bankamatik_Simulasyon14
             this.label6.TabIndex = 0;
             this.label6.Text = "MİLLETBANK";
             // 
+            // lblSayiToplami
+            // 
+            this.lblSayiToplami.AutoSize = true;
+            this.lblSayiToplami.ForeColor = System.Drawing.Color.White;
+            this.lblSayiToplami.Location = new System.Drawing.Point(79, 149);
+            this.lblSayiToplami.Name = "lblSayiToplami";
+            this.lblSayiToplami.Size = new System.Drawing.Size(57, 20);
+            this.lblSayiToplami.TabIndex = 12;
+            this.lblSayiToplami.Text = "2 + 2 =";
+            // 
+            // txtCaptcha
+            // 
+            this.txtCaptcha.Location = new System.Drawing.Point(145, 146);
+            this.txtCaptcha.Name = "txtCaptcha";
+            this.txtCaptcha.Size = new System.Drawing.Size(154, 27);
+            this.txtCaptcha.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(305, 153);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 20);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "cevap";
+            this.label3.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(459, 262);
+            this.BackColor = System.Drawing.Color.MidnightBlue;
+            this.ClientSize = new System.Drawing.Size(459, 252);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblSayiToplami);
+            this.Controls.Add(this.txtCaptcha);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.msktxtTCKimlik);
@@ -179,6 +214,7 @@ namespace Bankamatik_Simulasyon14
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MilletBank - Bankamatik Sistemi";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -197,6 +233,9 @@ namespace Bankamatik_Simulasyon14
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblSayiToplami;
+        private System.Windows.Forms.TextBox txtCaptcha;
+        private System.Windows.Forms.Label label3;
     }
 }
 

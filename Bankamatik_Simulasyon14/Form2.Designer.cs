@@ -71,6 +71,7 @@ namespace Bankamatik_Simulasyon14
             this.btnHareketler = new System.Windows.Forms.Button();
             this.btnPassDegistir = new System.Windows.Forms.Button();
             this.btnParaCekme = new System.Windows.Forms.Button();
+            this.btnHakkinda = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -250,6 +251,7 @@ namespace Bankamatik_Simulasyon14
             this.panel1.Controls.Add(this.lblTarihSaat);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(860, 81);
@@ -341,9 +343,9 @@ namespace Bankamatik_Simulasyon14
             // lblAciklama
             // 
             this.lblAciklama.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAciklama.Location = new System.Drawing.Point(95, 125);
+            this.lblAciklama.Location = new System.Drawing.Point(95, 118);
             this.lblAciklama.Name = "lblAciklama";
-            this.lblAciklama.Size = new System.Drawing.Size(291, 71);
+            this.lblAciklama.Size = new System.Drawing.Size(291, 85);
             this.lblAciklama.TabIndex = 18;
             this.lblAciklama.Text = "null";
             // 
@@ -351,7 +353,7 @@ namespace Bankamatik_Simulasyon14
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(25, 125);
+            this.label11.Location = new System.Drawing.Point(25, 118);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(73, 20);
             this.label11.TabIndex = 17;
@@ -361,7 +363,7 @@ namespace Bankamatik_Simulasyon14
             // 
             this.lblHesapSend.AutoSize = true;
             this.lblHesapSend.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblHesapSend.Location = new System.Drawing.Point(144, 32);
+            this.lblHesapSend.Location = new System.Drawing.Point(144, 25);
             this.lblHesapSend.Name = "lblHesapSend";
             this.lblHesapSend.Size = new System.Drawing.Size(33, 20);
             this.lblHesapSend.TabIndex = 10;
@@ -371,7 +373,7 @@ namespace Bankamatik_Simulasyon14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(25, 32);
+            this.label14.Location = new System.Drawing.Point(25, 25);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(123, 20);
             this.label14.TabIndex = 9;
@@ -396,7 +398,7 @@ namespace Bankamatik_Simulasyon14
             // 
             this.lblTutar.AutoSize = true;
             this.lblTutar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTutar.Location = new System.Drawing.Point(69, 102);
+            this.lblTutar.Location = new System.Drawing.Point(69, 95);
             this.lblTutar.Name = "lblTutar";
             this.lblTutar.Size = new System.Drawing.Size(33, 20);
             this.lblTutar.TabIndex = 16;
@@ -406,7 +408,7 @@ namespace Bankamatik_Simulasyon14
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(26, 102);
+            this.label12.Location = new System.Drawing.Point(26, 95);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(46, 20);
             this.label12.TabIndex = 15;
@@ -416,7 +418,7 @@ namespace Bankamatik_Simulasyon14
             // 
             this.lblBakiye.AutoSize = true;
             this.lblBakiye.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBakiye.Location = new System.Drawing.Point(79, 79);
+            this.lblBakiye.Location = new System.Drawing.Point(79, 72);
             this.lblBakiye.Name = "lblBakiye";
             this.lblBakiye.Size = new System.Drawing.Size(33, 20);
             this.lblBakiye.TabIndex = 14;
@@ -426,7 +428,7 @@ namespace Bankamatik_Simulasyon14
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(26, 79);
+            this.label10.Location = new System.Drawing.Point(26, 72);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(55, 20);
             this.label10.TabIndex = 13;
@@ -436,7 +438,7 @@ namespace Bankamatik_Simulasyon14
             // 
             this.lblHesapReceiver.AutoSize = true;
             this.lblHesapReceiver.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblHesapReceiver.Location = new System.Drawing.Point(108, 56);
+            this.lblHesapReceiver.Location = new System.Drawing.Point(108, 49);
             this.lblHesapReceiver.Name = "lblHesapReceiver";
             this.lblHesapReceiver.Size = new System.Drawing.Size(33, 20);
             this.lblHesapReceiver.TabIndex = 12;
@@ -446,7 +448,7 @@ namespace Bankamatik_Simulasyon14
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(25, 56);
+            this.label8.Location = new System.Drawing.Point(25, 49);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(87, 20);
             this.label8.TabIndex = 11;
@@ -539,6 +541,21 @@ namespace Bankamatik_Simulasyon14
             this.btnParaCekme.Text = "Para Çekme";
             this.btnParaCekme.UseVisualStyleBackColor = false;
             // 
+            // btnHakkinda
+            // 
+            this.btnHakkinda.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnHakkinda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHakkinda.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnHakkinda.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnHakkinda.ForeColor = System.Drawing.Color.Black;
+            this.btnHakkinda.Location = new System.Drawing.Point(424, 137);
+            this.btnHakkinda.Name = "btnHakkinda";
+            this.btnHakkinda.Size = new System.Drawing.Size(126, 40);
+            this.btnHakkinda.TabIndex = 36;
+            this.btnHakkinda.Text = "Hakkında";
+            this.btnHakkinda.UseVisualStyleBackColor = false;
+            this.btnHakkinda.Click += new System.EventHandler(this.btnHakkinda_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -547,6 +564,7 @@ namespace Bankamatik_Simulasyon14
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(860, 513);
             this.ControlBox = false;
+            this.Controls.Add(this.btnHakkinda);
             this.Controls.Add(this.btnParaCekme);
             this.Controls.Add(this.btnPassDegistir);
             this.Controls.Add(this.btnHareketler);
@@ -617,5 +635,6 @@ namespace Bankamatik_Simulasyon14
         private System.Windows.Forms.Button btnHareketler;
         private System.Windows.Forms.Button btnPassDegistir;
         private System.Windows.Forms.Button btnParaCekme;
+        private System.Windows.Forms.Button btnHakkinda;
     }
 }

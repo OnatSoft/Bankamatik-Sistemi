@@ -51,6 +51,10 @@ namespace Bankamatik_Simulasyon14
             this.label2 = new System.Windows.Forms.Label();
             this.txtBakiye = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.lblSayiToplami = new System.Windows.Forms.Label();
+            this.txtCaptcha = new System.Windows.Forms.TextBox();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -155,7 +159,7 @@ namespace Bankamatik_Simulasyon14
             this.btnKaydol.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKaydol.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnKaydol.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaydol.Location = new System.Drawing.Point(181, 366);
+            this.btnKaydol.Location = new System.Drawing.Point(181, 402);
             this.btnKaydol.Name = "btnKaydol";
             this.btnKaydol.Size = new System.Drawing.Size(179, 50);
             this.btnKaydol.TabIndex = 17;
@@ -185,9 +189,9 @@ namespace Bankamatik_Simulasyon14
             // 
             // txtHesapno
             // 
+            this.txtHesapno.Enabled = false;
             this.txtHesapno.Location = new System.Drawing.Point(181, 290);
             this.txtHesapno.Name = "txtHesapno";
-            this.txtHesapno.ReadOnly = true;
             this.txtHesapno.Size = new System.Drawing.Size(179, 25);
             this.txtHesapno.TabIndex = 14;
             // 
@@ -212,7 +216,7 @@ namespace Bankamatik_Simulasyon14
             this.LnkGiris.ForeColor = System.Drawing.Color.White;
             this.LnkGiris.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.LnkGiris.LinkColor = System.Drawing.Color.White;
-            this.LnkGiris.Location = new System.Drawing.Point(366, 396);
+            this.LnkGiris.Location = new System.Drawing.Point(366, 432);
             this.LnkGiris.Name = "LnkGiris";
             this.LnkGiris.Size = new System.Drawing.Size(66, 20);
             this.LnkGiris.TabIndex = 18;
@@ -230,7 +234,7 @@ namespace Bankamatik_Simulasyon14
             this.linkLabel1.ForeColor = System.Drawing.Color.White;
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(366, 295);
+            this.linkLabel1.Location = new System.Drawing.Point(362, 295);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(48, 20);
             this.linkLabel1.TabIndex = 18;
@@ -244,7 +248,8 @@ namespace Bankamatik_Simulasyon14
             this.panel1.BackColor = System.Drawing.Color.PaleGreen;
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(485, 60);
             this.panel1.TabIndex = 21;
@@ -253,11 +258,11 @@ namespace Bankamatik_Simulasyon14
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Italic);
-            this.label7.Location = new System.Drawing.Point(279, 20);
+            this.label7.Location = new System.Drawing.Point(323, 20);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(180, 25);
+            this.label7.Size = new System.Drawing.Size(120, 25);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Müşteri Online Kayıt";
+            this.label7.Text = "Müşteri Kayıt";
             // 
             // label2
             // 
@@ -287,12 +292,65 @@ namespace Bankamatik_Simulasyon14
             this.label10.TabIndex = 15;
             this.label10.Text = "Bakiye:";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(362, 359);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(48, 20);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "cevap";
+            this.label11.Visible = false;
+            // 
+            // lblSayiToplami
+            // 
+            this.lblSayiToplami.AutoSize = true;
+            this.lblSayiToplami.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSayiToplami.ForeColor = System.Drawing.Color.White;
+            this.lblSayiToplami.Location = new System.Drawing.Point(117, 355);
+            this.lblSayiToplami.Name = "lblSayiToplami";
+            this.lblSayiToplami.Size = new System.Drawing.Size(57, 20);
+            this.lblSayiToplami.TabIndex = 23;
+            this.lblSayiToplami.Text = "2 + 2 =";
+            // 
+            // txtCaptcha
+            // 
+            this.txtCaptcha.Location = new System.Drawing.Point(181, 354);
+            this.txtCaptcha.Name = "txtCaptcha";
+            this.txtCaptcha.Size = new System.Drawing.Size(179, 25);
+            this.txtCaptcha.TabIndex = 22;
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.Silver;
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.linkLabel2.ForeColor = System.Drawing.Color.White;
+            this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabel2.LinkColor = System.Drawing.Color.White;
+            this.linkLabel2.Location = new System.Drawing.Point(362, 229);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(52, 20);
+            this.linkLabel2.TabIndex = 25;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Göster";
+            this.linkLabel2.VisitedLinkColor = System.Drawing.Color.DarkGray;
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
             // FrmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(485, 433);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.MidnightBlue;
+            this.ClientSize = new System.Drawing.Size(485, 464);
+            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lblSayiToplami);
+            this.Controls.Add(this.txtCaptcha);
             this.Controls.Add(this.txtBakiye);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
@@ -321,7 +379,7 @@ namespace Bankamatik_Simulasyon14
             this.Name = "FrmRegister";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bankamatik Sistemi - Kayıt Ol";
+            this.Text = "MilletBank - Bankamatik Sistemi";
             this.Load += new System.EventHandler(this.FrmRegister_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -354,5 +412,9 @@ namespace Bankamatik_Simulasyon14
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtBakiye;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblSayiToplami;
+        private System.Windows.Forms.TextBox txtCaptcha;
+        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }

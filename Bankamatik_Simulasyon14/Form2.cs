@@ -172,5 +172,10 @@ namespace Bankamatik_Simulasyon14
             Form4 frm4 = new Form4();
             frm4.Show();
         }
+
+        private void btnHakkinda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bu program EchoSoft tarafından MilletBank Bankamatik Sistemi için geliştirilmiştir.\nİletişim ve Destek için: https://osomerr.cf veya onat.somer2018@gmail.com\n----------------------------------------\nSürüm: 1.3.0\nCopyRight 2023 - 26.06.2023 - EchoSoft", "SİSTEM HAKKINDA");
+        }
     }
 }

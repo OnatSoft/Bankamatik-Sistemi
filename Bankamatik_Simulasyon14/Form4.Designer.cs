@@ -58,9 +58,10 @@ namespace Bankamatik_Simulasyon14
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(515, 81);
+            this.panel1.Size = new System.Drawing.Size(517, 81);
             this.panel1.TabIndex = 0;
             // 
             // label1
