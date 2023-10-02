@@ -13,7 +13,7 @@ namespace Bankamatik_Simulasyon14
 {
     public partial class Form1 : Form
     {
-        SqlConnection baglanti = new SqlConnection(@"Data Source=LAPTOP-ONATSOFT\ONATSOFT;Initial Catalog=BankamatikDB;Integrated Security=True");
+        SqlConnection baglanti = new SqlConnection(@"");
 
         public Form1()
         {
