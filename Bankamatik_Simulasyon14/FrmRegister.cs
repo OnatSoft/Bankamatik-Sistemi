@@ -14,7 +14,7 @@ namespace Bankamatik_Simulasyon14
     public partial class FrmRegister : Form
     {
 
-        SqlConnection baglanti = new SqlConnection(@"Data Source=LAPTOP-ONATSOFT\ONATSOFT;Initial Catalog=BankamatikDB;Integrated Security=True");
+        SqlConnection baglanti = new SqlConnection(@"");
         Random random = new Random();
 
         public FrmRegister()
